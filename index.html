@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healet</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: white;
+            box-sizing: border-box;
+       
+            
+        }
+       .navbar{
+        background:url('./images/slider-bg.jpg');
+        height: 700px;
+        width: 100%;       
+    
+    }
+      
+       .nav-links{
+        display:flex;
+        justify-content:space-evenly;
+        margin-left: 200px;
+        
+      }
+      .nav-links li a{
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        position: absolute;
+        top: 20px;
+                
+      }
+     
+      .nav-heading{
+        color: rgb(165, 141, 141);
+        margin-left: 50px;
+        margin-top: 1px;        /* top: 10px; */
+        /* right: 100px; */
+        font-size: 60px;
+      }
+     
+      .nav-body{
+        color: white;
+        position: absolute;
+        top: 240px;
+        left: 150px;
+        font-size: 25px;
+    }
+    .shop-btn{
+        text-decoration: none;
+       padding: 10px 50px;
+        border: 4px solid rgb(119, 86, 64);
+        position: absolute;
+        top: 250px;
+        border-radius: 8px;
+        color: rgb(199, 190, 183);
+        cursor: pointer;
+    }
+    .shop-btn:hover{
+        background-color:rgb(39, 27, 18) ;
+        color: white;
+        box-shadow: 2px 2px 10px 1px rgb(236, 202, 178);
+        transition: 0.5s;
+    }
+    .product-heading{
+        text-align: center;
+        font-size: 50px;
+        margin-top: 60px;
+      
+    }
+    .product-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px;
+    }
+    .product{
+        background-color:  #e6e6e6;
+        height: 300px;
+        width: 280px;
+        margin: 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 1px 1px 7px 1px black;
+        /* padding: 10px; */
+    /* position: absolute; */
+    }
+    .new-img{
+        height: 60px;
+       /* padding-top: px; */
+       position: relative;
+       top: -40px;
+       left: 2px;
+
+    
+    }
+    .prod-img{
+        height: 90px;
+        position: relative;
+       top: 100px;
+       left: 20px;
+
+    }
+    .prod-name{
+        font-size: 15px;
+        font-weight: bold;
+        position: relative;
+        top: 170px;
+    }
+    .all-prd{
+        margin-top: 30px;
+        padding: 15px 40px;
+        border: 1px solid black;
+        text-decoration: none;
+        border-color: rgb(161, 124, 55);
+        color:white;
+        background-color: red;
+        border-radius: 10px;
+    }
+    .all-prd:hover{
+        border-color: red;
+        color: black;
+        background-color: white;
+        transition: 0.5s;
+    }
+   
+    .about-img{
+        height: 400px;
+        width: 650px;
+        border-radius: 40px;
+        box-shadow: 1px 1px 8px 5px rgb(187, 87, 87);
+        margin-top: 30px;
+        margin-left: 80px;
+        float: left;
+    }
+    .a-data{
+        /* float: right; */
+       float: right;
+       position: relative;
+       left: -100px;
+       top: 80px;
+        
+    }
+    .about-heading{
+        
+  font-family: "Anta", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 70px;
+
+    }
+    .about-para{
+
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  /* text-align: justify; */
+
+    }
+    .see-more{
+        
+        padding: 15px 30px;
+        border: 1px solid black;
+        text-decoration: none;
+        border-color: rgb(161, 124, 55);
+        color:white;
+        background-color: red;
+        border-radius: 10px;
+    }
+    .see-more:hover{
+        border-color: red;
+        color: black;
+        background-color: white;
+        transition: 0.5s;
+    }
+    </style>
+
+<link href="css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="nav-heading">HEALET </h1>
+        <ul class="nav-links">
+            <!-- <li><a href="./index.html">HOME</a></li> -->
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">BLOG</a></li>
+        </ul>
+    
+        <div class="nav-body">
+            <h1 class="nav-body-heading">Best Jewellary <br> Collection</h1>
+            <p>“Jewelry is something that has to do <br> with emotion. That aspect of jewelry <br> really interests me.”</p>
+
+            <a href="#" class="shop-btn"> Shop Now</a>
+        </div>
+    </div>
+
+    <!-- main section starts from here -->
+    
+    <h1 class="product-heading">Latest Products </h1>
+    <div class="product-container">
+        <div class="product">
+            <img src="./images/new (1).png" class="new-img">
+            <img src="./images/p1.png" class="prod-img">
+            <div class="prod-name">
+               <pre> Neclace              Price ₹20 K</pre>
+            </div>
+        </div>
+
+        <div class="product">
+            <!-- <p>sujal</p> -->
+            <img src="./images/new (1).png" class="new-img">
+            <img src="./images/p2.png" class="prod-img">
+
+            <div class="prod-name">
+                <pre> Neclace              Price ₹30 K</pre>
+             </div>
+        </div>
+
+        <div class="product">
+            <!-- <p>sujal</p> -->
+            <img src="./images/new (1).png" class="new-img">
+            <img src="./images/p3.png" class="prod-img">
+            <div class="prod-name">
+                <pre> Neclace              Price ₹40 K</pre>
+             </div>
+        </div>
+
+        <div class="product">
+            <!-- <p>sujal</p> -->
+            <img src="./images/new (1).png" class="new-img">
+            <img src="./images/p4.png" class="prod-img">
+            <div class="prod-name">
+                <pre> Ring                Price ₹40 K</pre>
+             </div>
+        </div>
+
+        <br>
+
+        <div class="product">
+            <!-- <p>sujal</p> -->
+            <img src="./images/new (1).png" class="new-img">
+            <img src="./images/p5.png" class="prod-img">
+            <div class="prod-name">
+                <pre> Ring                Price ₹10 K</pre>
+             </div>
+        </div>
+
+        <div class="product">
+            <!-- <p>sujal</p> -->
+            <img src="./images/new (1).png" class="new-img">
+            <img src="./images/p6.png" class="prod-img">
+            <div class="prod-name">
+                <pre> Earring              Price ₹80 K</pre>
+             </div>
+        </div>
+
+        <div class="product">
+            <!-- <p>sujal</p> -->
+            <img src="./images/new (1).png" class="new-img">
+            <img src="./images/p7.png" class="prod-img">
+            <div class="prod-name">
+                <pre> Earring              Price ₹20 K</pre>
+             </div>
+
+        </div>
+
+        <div class="product">
+            <!-- <p>sujal</p> -->
+            <img src="./images/new (1).png" class="new-img">
+            <img src="./images/p8.png" class="prod-img">
+            <div class="prod-name">
+                <pre> Neclace              Price ₹70 K</pre>
+             </div>
+        
+            </div>
+            <a href="#" class="all-prd">View All Products </a>
+
+        
+    </div>
+
+    <!-- About us section  -->
+    <section class="aboutus">
+        
+            <img src="./images/about-img.jpg" class="about-img">
+
+            <div class="a-data">
+                <h1 class="about-heading">Abous Us</h1>
+                <p class="about-para">Timeless treasures, crafted stories. <br> We weave joy into ethically sourced gems <br> &  meticulous designs.
+                    <br> Heirlooms or everyday love, discover yours with us. <br> Ignite your sparkle.  <br>[Healet].</p>
+                    <br><br>
+
+                    <a href="#" class="see-more">See More! </a>
+            </div>
+       
+    </section>
+
+  
+    
+</body>
+</html>
